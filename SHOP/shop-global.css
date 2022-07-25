@@ -1,4 +1,5 @@
 //------------------GLOBAL-SRYLE-------------------------
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: white;
     color: #fff;
     overflow-x: hidden
 }
@@ -225,6 +226,7 @@ a:hover {
     background: #232323
 }
 
+
 .hide {
     display: none !important
 }
@@ -388,7 +390,7 @@ textarea {
 }
 
 textarea {
-    resize: none
+    resize: none;
 }
 
 .go-back-bnt {
@@ -511,4 +513,123 @@ textarea {
 .modal__content .modal__btn:not(:nth-child(2)) {
     margin-top: 5px
 }
+
+//------------------PRODUCT_ADDED_STYLE----------------------
+.product-added {
+    &__modal {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    &__content {
+        padding: 30px;
+        width: 470px;
+        background: #232323;
+    }
+
+    &__title-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    &__close-btn {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    &__info {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__image {
+        width: 64px;
+        height: 64px;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    &__article {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 5px;
+    }
+
+    &__size {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__price-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__btn-block  {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__btn {
+        width: calc((100% - 15px) / 2);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__btn:last-child {
+        background: #010101;
+        color: #fff;
+    }
+
+    &__btn:first-child {
+        background: #fff;
+        color: #010101;
+        margin-right: 15px;
+    }
+}
+//------------------PRODUCT_ADDED_STYLE-END----------------------
+
 //------------------GLOBAL-STYLE-END-------------------------
+
