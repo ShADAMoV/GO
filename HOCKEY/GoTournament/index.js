@@ -4,31 +4,36 @@ import './slick/slick.min.js'
 import './slick/slick.css';
 import './slick/slick-theme.css';
 
-  if ($(window).width() >= 1300) {
-    $('.go-tournament__swiper').slick({
-      infinite: false,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-    });
-  }
-  if (($(window).width() < 1300) && ($(window).width() >= 930)) {
-    $('.go-tournament__swiper').slick({
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-    });
-  }
-  if (($(window).width() < 930) && ($(window).width() >= 650)) {
-    $('.go-tournament__swiper').slick({
-      infinite: false,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-    });
-  }
-  if (($(window).width() < 650)) {
-    $('.go-tournament__swiper').slick({
-      infinite: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    });
-  }
+  $('.go-tournament__swiper').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1441,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+      }
+    },
+    {
+      breakpoint: 490,
+      settings: {
+        slidesToShow: 1,
+        infinite: false,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
