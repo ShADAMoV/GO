@@ -6,7 +6,6 @@ import './slick/slick-theme.css';
 
   $('.go-tournament__swiper').slick({
   infinite: false,
-  speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
