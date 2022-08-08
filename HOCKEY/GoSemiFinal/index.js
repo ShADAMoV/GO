@@ -19,7 +19,7 @@ import './slick/slick-theme.css';
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -27,7 +27,7 @@ import './slick/slick-theme.css';
       }
     },
     {
-      breakpoint: 490,
+      breakpoint: 491,
       settings: {
         slidesToShow: 1,
         infinite: false,
