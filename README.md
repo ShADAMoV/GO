@@ -1,1 +1,1 @@
-# GO - это проект команды по хокею GO и GOHOCKEY
+# GO is a project of the GO and GOHOCKEY hockey team
